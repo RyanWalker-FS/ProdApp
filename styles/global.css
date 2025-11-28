@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add any global CSS you want here. NativeWind will map Tailwind classes to RN styles. */
+
+/* Example utility you might want for web-specific tweaks */
+html,
+body,
+#root {
+  height: 100%;
+}
