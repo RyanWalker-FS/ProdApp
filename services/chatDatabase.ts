@@ -50,7 +50,9 @@ class ChatDatabaseService {
       }
       // Ensure `mentions` column exists for older DBs
       const hasMentions = Array.isArray(pragmaRows)
-        ? pragmaRows.some((r: any) => r && (r.name === "mentions" || r.name === "MENTIONS"))
+        ? pragmaRows.some(
+            (r: any) => r && (r.name === "mentions" || r.name === "MENTIONS")
+          )
         : false;
 
       if (!hasMentions) {
